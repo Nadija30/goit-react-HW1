@@ -1,6 +1,6 @@
 # goit-react-HW1
 
-https://ibb.co/8cH5VFg
-https://ibb.co/nnGs35z
-https://ibb.co/9npW8Kd
-https://ibb.co/1dGzPP4
+https://ibb.co/8cH5VFg - list
+https://ibb.co/nnGs35z - get
+https://ibb.co/9npW8Kd - add
+https://ibb.co/1dGzPP4 -delete
