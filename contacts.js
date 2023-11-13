@@ -17,13 +17,13 @@ export const getContactById = async (contactId) => {
 
 export const removeContact = async (contactId) => {
   const contacts = await listContacts();
-  const removeIndex = contacts.findIndex(({ id }) => id === contactId);
+  const removeIndex = contacts.findIndex((item) => item.id === contactId);
   if (removeIndex === -1) {
     return null;
   }
-  const removeContact = contacts.splice(removeIndex, 1);
+  const [removeContact] = contacts.splice(removeIndex, 1);
   await fs.writeFile(contactsPath, JSON.stringify(contacts, null, 2));
-  return removeContact;
+  return [removeContact];
 };
 
 export const addContact = async (name, email, phone) => {
